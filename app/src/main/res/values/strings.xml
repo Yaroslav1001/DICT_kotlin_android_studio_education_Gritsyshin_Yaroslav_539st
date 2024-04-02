@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">practice_7</string>
+    <string name="initial_text">Bill value: 0$ tip percentage: 0%</string>
+    <string name="hint_enter_bill_amount">Tip amount:</string>
+</resources>
