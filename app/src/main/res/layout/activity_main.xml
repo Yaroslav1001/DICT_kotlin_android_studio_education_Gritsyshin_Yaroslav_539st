@@ -1,29 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Информация -->
+    <TextView
+        android:id="@+id/resourcesInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        tools:ignore="HardcodedText"
+        />
+
+    <!-- Замовлення кави -->
+    <Button
+        android:id="@+id/orderCoffeeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_coffee"
+        android:padding="8dp" />
+
+    <!-- Наповнення ресурсами кавомашини -->
+    <EditText
+        android:id="@+id/waterInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/water"
+        android:autofillHints="water"
+        android:inputType="number" />
+
 
     <EditText
-        android:id="@+id/edit_text"
+        android:id="@+id/milkInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_enter_bill_amount"
-        android:inputType="numberDecimal"
-        android:autofillHints="" />
+        android:hint="@string/milk"
+        android:autofillHints="milk"
+        android:inputType="number" />
 
-    <SeekBar
-        android:id="@+id/slider"
+    <EditText
+        android:id="@+id/coffeeBeansInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="100"
-        android:progress="0"/>
+        android:hint="@string/coffee_beans"
+        android:autofillHints="coffeeBeans"
+        android:inputType="number" />
 
-    <TextView
-        android:id="@+id/text_view"
+    <EditText
+        android:id="@+id/disposableCupsInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/initial_text"
-        android:layout_marginTop="16dp"/>
+        android:hint="@string/disposable_cups"
+        android:autofillHints="disposableCups"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/fillResourcesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fill_resources"
+        android:padding="8dp" />
+
+    <!-- Збирання грошей -->
+    <Button
+        android:id="@+id/collectMoneyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/collect_money"
+        android:padding="8dp" />
 
 </LinearLayout>

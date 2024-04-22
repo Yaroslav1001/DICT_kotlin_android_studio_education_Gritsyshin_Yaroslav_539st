@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="waterInput" type="id">@+id/waterInput</item>
+    <item name="milkInput" type="id">@+id/milkInput</item>
+    <item name="coffeeBeansInput" type="id">@+id/coffeeBeansInput</item>
+    <item name="disposableCupsInput" type="id">@+id/disposableCupsInput</item>
+</resources>
